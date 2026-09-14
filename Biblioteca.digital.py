@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 from libros import lista_libros, consultar_libros, buscar_libro
+=======
+>>>>>>> 527bff7941f81777148ed36c36077944f951228e
 while True:
     print("===BIBLIOTECA DIGITAL===",
           "\n1.-Menu de libros",
