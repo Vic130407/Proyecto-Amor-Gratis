@@ -17,7 +17,6 @@ while True:
         elif res==2:
             menu_estudiantes()
         elif res==3:
-            from prestamos import menu_prestamos
             menu_prestamos()
         elif res==4:
             break

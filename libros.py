@@ -1,4 +1,19 @@
-lista_libros=[]
+lista_libros=[(
+        {"Titulo": "CIEN AÑOS DE SOLEDAD", "Autor": "Gabriel Garcia Marquez", "Año": 1967, "Genero": "realismo magico",
+        }, ("15", "09", "2026"),),
+    (
+        {"Titulo": "DON QUIJOTE DE LA MANCHA","Autor": "Miguel De Cervantes","Año": 1605,"Genero": "novela",
+        },("15", "09", "2026"),),
+    (
+        {"Titulo": "1984", "Autor": "George Orwell", "Año": 1949, "Genero": "distopia",
+        },("15", "09", "2026"),),
+    (
+        {"Titulo": "EL PRINCIPITO", "Autor": "Antoine De Saint-Exupery","Año": 1943,"Genero": "fantasia",
+        },("15", "09", "2026"),),
+    (
+        {"Titulo": "Fahrenheit 451".upper(), "Autor": "Ray Bradbury","Año": 1953,"Genero": "distopia",
+        }, ("15", "09", "2026"),
+    ),]
 def registrar_libro(cantidad):
     dia=input("¿Dia en que se realiza el registro?(Solo numero)")
     mes=input("¿Mes en que se realiza el registro?(Solo numero)")
