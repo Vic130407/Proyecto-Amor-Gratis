@@ -1,4 +1,5 @@
 from libros import lista_libros
+from estudiantes import lista_estudiantes
 lista_disponibles = lista_libros.copy()
 lista_prestamos=[]
 def registrar_prestamo():
@@ -7,7 +8,7 @@ def registrar_prestamo():
         libro = input('Libro que se va a prestar: \n')
         for i in lista_disponibles:
             if libro == lista_disponibles[i]:
-                lista_prestamos[i]=lista_disponibles[i]
+                lista_prestamos.append(lista_disponibles[i])
                 lista_disponibles.pop(i)
             else:
                 print('Libro no existente o mal escrito, revisar lista de libros')
@@ -18,7 +19,7 @@ def devolver_prestamo():
     libro=input('Libro que desea devolver: \n')
     for i in lista_prestamos:
         if libro in lista_prestamos[i]:
-            lista_disponibles[i] = lista_prestamos[i]
+            lista_disponibles.append(lista_prestamos[i])
             lista_prestamos.pop(i)
             break
     print('Libro no encontrado')
