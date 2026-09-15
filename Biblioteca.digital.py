@@ -1,4 +1,6 @@
-from libros import lista_libros, consultar_libros, buscar_libro
+from libros import menu_libros
+from prestamos import menu_prestamos
+from estudiantes import menu_estudiantes
 while True:
     print("===BIBLIOTECA DIGITAL===",
           "\n1.-Menu de libros",
@@ -11,11 +13,9 @@ while True:
         print("Respuesta no valida")
     else:
         if res==1:
-            from libros import menu_libros
             menu_libros()
         elif res==2:
-            cantidad=len(lista_libros)
-            consultar_libros(cantidad)
+            menu_estudiantes()
         elif res==3:
             from prestamos import menu_prestamos
             menu_prestamos()
