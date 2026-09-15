@@ -1,4 +1,4 @@
-lista_estudiantes = []
+lista_estudiantes = ['Jose Hernandez', 'Sebastian Aldaz', 'Miguel Mendez', 'Gisel Portillo']
 
 def registrar_estudiante(cantidad):
     for i in range(cantidad):
