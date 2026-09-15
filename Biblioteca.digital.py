@@ -17,8 +17,8 @@ while True:
             cantidad=len(lista_libros)
             consultar_libros(cantidad)
         elif res==3:
-            busqueda=input("¿Titulo del libro que esta buscando?")
-            buscar_libro(busqueda)
+            from prestamos import menu_prestamos
+            menu_prestamos()
         elif res==4:
             break
         else:

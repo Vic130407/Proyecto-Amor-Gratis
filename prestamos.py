@@ -26,7 +26,7 @@ def imprimir_prestamos():
     print('\t --- Lista de prestamos ---')
     for i in lista_prestamos:
         print(lista_prestamos[i])
-def menu():
+def menu_prestamos():
     print("\t===MENU PRESTAMOS===",
           "\n1.-Realizar un prestamo",
           "\n2.-Devolver prestamo",
